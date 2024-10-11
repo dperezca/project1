@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadoo Travels</title>
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="/src/plane.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
+  </head>
+
+  <body
+    class="bg-no-repeat bg-right-top text-dark md:bg-yellow"
+  >
+    <div class="container flex flex-col justify-center items-center md:mt-8 mx-auto">
+      <!-- Header: logo y navbar -->
+      <header class="flex justify-between w-full flex-wrap items-center py-3 md:py-0 px-8 bg-yellBg md:bg-transparent">
+        <picture>
+          <img src="./src/logo.png" alt="Jadoo Travels Logo"/>
+        </picture>
+        <nav>
+          <ol class="hidden md:flex flex-wrap justify-end gap-3 items-center">
+            <li class="nv-item"><a href="#">Destinations</a></li>
+            <li class="nv-item"><a href="#">Hotels</a></li>
+            <li class="nv-item"><a href="#">Flights</a></li>
+            <li class="nv-item"><a href="#">Bookings</a></li>
+            <li class="nv-item"><a href="#">Login</a></li>
+            <button
+              class="nv-item border border-black rounded-md hover:bg-dark hover:text-white"
+            >
+              Sign up
+            </button>
+            <select name="language" class="nv-item bg-transparent cursor-pointer">
+              <option value="English" class="" selected>
+                EN
+              </option>
+              <option value="Castellano" class="">ES</option>
+              <option value="Català" class="">CA</option>
+            </select>
+          </ol>
+          <button class="md:hidden nv-item border border-black rounded-md"><i class="fa-solid fa-bars"></i></li>
+        </nav>
+      </header>
+      <!-- Imagen y titulo principal -->
+      <section class="flex justify-between pt-6 items-end mb-24 px-8">
+        <div class="flex-row space-y-3 md:basis-[50%] mr-">
+          <h2 class="hidden md:block uppercase text-primary font-bold text-xl">
+            Best Destinations around the world
+          </h2>
+          <div class="relative">
+            <h1
+              class="relative z-10 font-bold text-[50px] md:text-[5.5rem] text-blue font-volkhov tracking-tighter leading-none"
+            >
+              <span class="relative z-10">Travel, </span>
+               <span class="inline-block relative">
+                <span class="relative z-10">enjoy</span><img src="./src/line.png" class="relative -z-1 max-w-none bottom-3 md:bottom-4 -left-5 md:-left-7 w-3/5 md:w-auto" /></span><span>and live a new and full life </span>
+            </h1>
+            <!-- <img src="./src/line.png" class="hidden md:block absolute top-[70px] left-64 z-0" /> -->
+          </div>
+
+          <p class="font-poppins text-gray leading-8 md:pl-4">
+            Built Wicket longer admire do barton vanity itself do in it.
+            <br>Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
+          </p>
+          <div class="pt-4 flex gap-5">
+            <button
+              class="bg-secondary text-white px-5 py-3 rounded-md font-poppins text-lg drop-shadow-md hover:opacity-75"
+            >
+              Find out more
+            </button>
+            <button
+              class="text-gray2 font-poppins font-medium flex items-center hover:opacity-75"
+            >
+              <div
+                class="bg-primary text-white p-4 m-1 rounded-full flex items-center justify-center h-12 w-12 drop-shadow-sm"
+              >
+                <span class="fa-solid fa-play text-lg"></span>
+              </div>
+              <span class="ps-1"> Play demo</span>
+            </button>
+          </div>
+        </div>
+        <picture class="hidden md:flex justify-center items-center basis-[50%]relative">
+           <img src="./src/Image.png" class=""/> 
+        </picture>
+      </section>
+      <!-- Category -->
+      <section
+        class="hidden md:flex-col md:flex mb-32 bg-no-repeat bg-right-top bg-category items-center"
+      >
+        <p class="section-subtitle uppercase">
+          Category
+        </p>
+        <h2 class="section-title mb-24">
+          We Offer Best Services
+        </h2>
+        <div>
+          <div class="grid grid-cols-4 gap-10 px-8">
+            <!-- Cards, las 4 iguales-->
+            <div class="group card">
+              <button class="card-btn px-7">
+                <img
+                  src="./src/category1.svg"
+                  class="max-w-24 text-center mx-auto"
+                  alt="Calculated Weather logo"
+                />
+                <p class="cat-card-title whitespace-nowrap">Calculated weather</p>
+                <p class="cat-card-content">
+                  Built Wicket longer admire do barton vanity itself do in it.
+                </p>
+              </button>
+              <img class="card-img" src="./src/rect.png" alt="Decorative image"/>
+            </div>
+            <div class="group card">
+              <button class="card-btn">
+                <img src="./src/category2.png" class="text-center mx-auto" />
+                <p class="cat-card-title">best flies</p>
+                <p class="cat-card-content">
+                  Engrossed listening. Park gate sell they west hard for the.
+                </p>
+              </button>
+              <img class="max-w-24 card-img" src="./src/rect.png" />
+            </div>
+            <div class="group card">
+              <button class="card-btn">
+                <img
+                  src="./src/category3.svg"
+                  class="max-w-24 text-center mx-auto"
+                />
+                <p class="cat-card-title">Local events</p>
+                <p class="cat-card-content">
+                  Barton vanity itself do in it. Preferd to men it engrossed
+                  listening.
+                </p>
+              </button>
+              <img class="card-img" src="./src/rect.png" />
+            </div>
+            <div class="group card">
+              <button class="card-btn">
+                <img
+                  src="./src/category4.svg"
+                  class="max-w-24 text-center mx-auto"
+                />
+                <p class="cat-card-title">Customization</p>
+                <p class="cat-card-content">
+                  We deliver outsourced aviation services for military customers
+                </p>
+              </button>
+              <img class="card-img" src="./src/rect.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Top destinations -->
+      <section class="hidden md:flex flex-col mb-32 justify-center items-center">
+        <p
+          class="section-subtitle capitalize"
+        >
+          top selling
+        </p>
+        <h2
+          class="section-title mb-16 capitalize"
+        >
+          top destinations
+        </h2>
+          <div
+            class="flex flex-wrap w-max justify-center gap-10 pl-20"
+          ><button>
+            <div
+              class="card-destination"
+            >
+              <div><img src="./src/dest1.png" class="overflow-hidden" /></div>
+              <div
+                class="card-destination-content"
+              >
+                <div class="flex flex-wrap justify-between cat-card-content">
+                  <span>Rome, Italy</span>
+                  <span>$5,42k</span>
+                </div>
+                <div
+                  class="flex flex-wrap font-poppins text-xs text-gray font-medium gap-3 items-center"
+                >
+                  <span><img src="./src/arrow.svg" /></span>
+                  <span>10 Days Trip</span>
+                </div>
+              </div>
+            </div>
+          </button>
+          <button>
+            <div
+              class="card-destination"
+            >
+              <div><img src="./src/dest2.png" class="overflow-hidden" /></div>
+              <div
+                class="card-destination-content"
+              >
+                <div class="flex flex-wrap justify-between cat-card-content">
+                  <span>London, UK</span>
+                  <span>$4,2k</span>
+                </div>
+                <div
+                  class="flex flex-wrap font-poppins text-xs text-gray font-medium gap-3 items-center"
+                >
+                  <span><img src="./src/arrow.svg" /></span>
+                  <span>12 Days Trip</span>
+                </div>
+              </div>
+            </div>
+          </button>
+          <button>
+            <div
+              class="card-destination"
+            >
+              <div><img src="./src/dest3.png" class="overflow-hidden" /></div>
+              <div
+                class="card-destination-content"
+              >
+                <div class="flex flex-wrap justify-between cat-card-content">
+                  <span>Full Europe</span>
+                  <span>$15k</span>
+                </div>
+                <div
+                  class="flex flex-wrap font-poppins text-xs text-gray font-medium gap-3 items-center"
+                >
+                  <span><img src="./src/arrow.svg" /></span>
+                  <span>28 Days Trip</span>
+                </div>
+              </div>
+            </div>
+          </button>
+            <picture class="relative flex justify-center right-20 -z-10">
+              <img src="./src/decore.svg">
+            </picture>
+        </div>
+      </section>
+      <!-- 3 easy steps -->
+      <section class="hidden md:flex mb-24 h-50 justify-center relative mx-20">
+        <div class="flex-col basis-1/2 text-left">
+          <p class="section-subtitle">Easy and fast</p>
+          <h2 class="section-title capitalize mt-3.5">book your next trip in 3 easy steps</h2>
+          <ol class="space-y-7 flex-rows mt-9">
+          <div class="flex items-center">
+            <picture class="bg-yell steps-icon">
+              <img src="./src/step1.svg" />
+            </picture>
+            <div class="steps-content">
+              <h4 class="text-h4 font-bold capitalize">choose destination</h4>
+              <span class="text-h4"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </span>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-orang steps-icon">
+              <img src="./src/step2.svg" />
+            </div>
+            <div class="steps-content">
+              <h4 class="text-h4 font-bold capitalize">make payment</h4>
+              <span class="text-h4"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </span>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-deepBlue steps-icon">
+              <img src="./src/step3.svg" />
+            </div>
+            <div class="steps-content">
+              <h4 class="text-h4 font-bold capitalize">Reach Airport on Selected Date</h4>
+              <span class="text-h4"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </span>
+            </div>
+          </div>
+        </ol>
+        </div>
+        <div class="flex-row basis-1/2">
+          <div class="bg-lightBlue w-1/4 h-1/2 absolute top-20 right-32 blur-3xl border opacity-80"></div>
+          <img src="./src/greece.png" class="relative top-20 left-10"/>
+            <img src="./src/greece2.svg" class="rounded-2xl relative -top-20 left-64" />
+            <img src="./src/greece3.svg" class="w-5 relative -top-20 left-96" />
+        </div>
+      </section>
+      <!-- What people say -->
+      <section class="hidden md:flex mb-32 text-left mx-20">
+        <div class="flex-col flex justify-start h-96">
+          <p class="text-subtitle">testimonials</p>
+          <h2 class="text-h2 text-left">What people say about us.</h2>
+          <picture class="mt-12 9t-5"><img src="./src/dots.png"></picture>
+        </div>
+        <div class="h-96 flex  items-center justify-center relative">
+          <div class="flex flex-wrap flex-col rounded-lg w-[75%] h-[55%] shadow bg-white p-7 relative z-10">
+            <img src="./src/profile.png" class="absolute -top-8 -left-8">
+            <p class="font-poppins font-medium text-gray mb-6">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+            <p class="font-poppins text-lg font-semibold text-gray">Mike taylor</p>
+            <p class="font-poppins text-sm font-medium text-gray">Lahore, Pakistan</p>
+          </div>
+          <div class="flex flex-wrap flex-col rounded-lg w-[75%] h-[55%] shadow bg-white p-7 absolute bottom-0 right-6 -z-10 border-0">
+            <p class="font-poppins font-medium text-gray mb-6">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+            <p class="font-poppins text-lg font-semibold text-gray">Chris Tomas</p>
+            <p class="font-poppins text-sm font-medium text-gray">CEO of Red Button</p>
+          </div>
+        </div>
+        <div class="flex-col flex h-96 justify-center p-1 wl-4 gap-14">
+          <img src="./src/arrow_up.svg" class="w-[24px]">
+          <img src="./src/arrow_down.svg">
+        </div>
+      </section>
+      <!-- Logos de empresas-->
+       <div class="hidden md:grid md:grid-cols-5 mb-16 items-center justify-center overflow-hidden gap-2 p-2">
+        <a class="logo" href="https://www.axon.com/products/axon-air" target="_blank"><img src="./src/logo1.png" class="w-full h-full object-none" alt="Logo de Axon"></a>
+        <a class="logo" href="https://www.jetstar.com/au/en/home" target="_blank"><img src="./src/logo2.png" class="w-full h-full object-none" alt="Logo de Jetstar"></a>
+        <a class="logo" href="https://www.expedia.es/" target="_blank"><img src="./src/logo3.png" class="w-full h-full object-none" alt="Logo de Expedia"></a>
+        <a class="logo" href="https://www.qantas.com/es/en.html" target="_blank"><img src="./src/logo4.png" class="w-full h-full object-none" alt="Logo de Qantas"></a>
+        <a class="logo" href="https://www.ita-airways.com/es_es/" target="_blank"><img src="./src/logo5.png" class="w-full h-full object-none" alt="Logo de Alitalia"></a>
+       </div>
+       <!-- Subscribe -->
+        <div class="hidden md:flex md:relative mb-36 w-10/12 mx-10">
+          <img src="./src/send_violet.svg" class="absolute -top-[25px] -right-[25px] z-10" />
+          <img src="./src/subscribe_deco.svg" class="absolute -bottom-16 -right-24 z-20" />
+          <div class="rounded-tl-[129px] rounded-tr-[20px] rounded-b-[20px] bg-violet h-90 mb-10 relative overflow-hidden -z-5 justify-center items-center flex">
+          <img src="./src/circles1.svg" class="absolute top-20 left-6 opacity-20" />
+          <img src="./src/circles2.svg" class="absolute top-0 right-0" />
+          <div class="flex-row m-10 z-20 justify-center items-center  w-4/6">
+          <p class="font-poppins font-semibold text-[33px] text-gray p-10 opacity-100">Subscribe to get information, latest news and other
+            interesting offers about Jadoo</p>
+          <form class="z-10 flex justify-center gap-4">
+              <div class="relative">
+                <input type="text" class="rounded-md pr-5 pl-12 py-3  font-poppins text-lg" placeholder="Your email" >
+                <img src="./src/sobre.svg" class="absolute top-4 left-4 "></input>
+              </div>
+            
+            <button class="bg-orange-400 text-white px-5 py-3 rounded-md font-poppins text-lg hover:opacity-75 z-10"
+          >
+            Subscribe
+          </button>
+        </form>
+          </div>
+          </div>
+        </div>
+
+      <!-- Bottom menu -->
+       <div class="flex flex-col md:flex-row justify-between text-left p-4 gap-2 w-full">
+        <div class="text-left hidden md:flex md:flex-col">
+          <p class="font-poppins text-darkblue text-[44px] font-medium">Jadoo</p>
+          <p class="font-poppins text-darkblue text-[13px] font-medium">Book your trip in minute, get full
+            <br>Control for much longer.
+            </p>
+            <p><img src="./src/social_inst_bg.svg"></p>
+        </div>
+        <div class="p-1">
+          <h5 class="font-poppins text-dark2 text-[21px] font-bold mb-8">Company</h5>
+          <ol class="gap-4">
+            <li class="footer-link"><a href="#">About</a></li>
+            <li class="footer-link"><a href="#">Careers</a></li>
+            <li class="footer-link"><a href="#">Mobile</a></li>
+          </ol>
+        </div>
+        <div class="p-1">
+          <h5 class="font-poppins text-dark2 text-[21px] font-bold mb-8">Contact</h5>
+          <ol class="gap-4">
+            <li class="footer-link"><a href="#">Help/FAQ</a></li>
+            <li class="footer-link"><a href="#">Press</a></li>
+            <li class="footer-link"><a href="#">Afiliates</a></li>
+          </ol>
+        </div>
+        <div class="p-1">          <h5 class="font-poppins text-dark2 text-[21px] font-bold mb-8">More</h5>
+          <ol class="gap-4">
+            <li class="footer-link"><a href="#">Airlinefees</a></li>
+            <li class="footer-link"><a href="#">Airline</a></li>
+            <li class="footer-link"><a href="#">Low fare tips</a></li>
+          </ol></div>
+        <div class="flex flex-col gap-6">
+          <div class="flex gap-6">
+            <button class="sm-btn bg-white"><img src="./src/social_fb.svg"></button>
+            <button class="sm-btn inst-bg"><img src="./src/social_inst.svg"></button>
+            <button class="sm-btn bg-white"><img src="./src/social_tw.svg"></button>
+          </div>
+          <p class="font-poppins text-[20px] font-medium text-gray">Discover our app</p>
+          <div class="flex flex-wrap gap-2">
+            <button class="stores-btn">
+              <img src="./src/btn_google_logo.svg" alt="Google logo">
+              <img src="./src/btn_google.svg" alt="Google logo">
+            </button>
+            <button class="stores-btn">
+              <img src="./src/btn_app_logo.svg" alt="Google logo">
+              <img src="./src/btn_app.svg" alt="App store logo">
+            </button>
+          </div>
+        </div>
+       </div>
+       <div class="font-poppins text-[14px] text-gray font-medium my-12">All rights reserved@jadoo.co</div>
+    </div>
+  </div>
+  </body>
+</html>

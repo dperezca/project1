@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        @apply relative col-span-1 justify-center flex-col flex items-center rounded-3xl p-1
+    }
+    .card-btn {
+        @apply col-span-1 justify-center flex-col flex items-center rounded-3xl z-10 relative py-14 px-10 bg-white hover:drop-shadow-a hover:drop-shadow-b hover:drop-shadow-c hover:drop-shadow-d hover:drop-shadow-e hover:drop-shadow-f
+    }
+    .card-img {
+        @apply absolute -bottom-8 -left-8 z-0 invisible group-hover:visible
+    }
+    .cat-card-title {
+        @apply font-poppins font-semibold text-blue text-center text-xl mt-6 capitalize
+    }
+    .cat-card-content {
+        @apply font-poppins font-medium text-gray text-center mt-3 capitalize
+    }
+    .card-destination {
+        @apply shadow flex-row rounded-xl gap-6 overflow-hidden relative hover:shadow-hover cursor-pointer
+    }
+    .card-destination-content {
+        @apply absolute bottom-0 left-0 bg-white flex-row flex-wrap w-full space-y-5 p-4 h-card
+    }
+
+    .logo {
+        @apply overflow-hidden flex justify-center rounded-lg hover:shadow  bg-white grayscale hover:grayscale-0 h-16 cursor-pointer
+    }
+    .nv-item {
+     @apply font-poppins font-medium rounded-md py-2 px-6 hover:text-dark2
+    }
+    .section-subtitle {
+        @apply font-poppins font-semibold text-lg text-gray
+    }
+    .section-title {
+        @apply font-volkhov font-bold text-4xl text-blue
+    }
+    .steps-icon {
+        @apply flex items-center justify-center rounded-xl h-12 w-12
+    }
+    .steps-content {
+        @apply flex-col flex pl-5 w-4/6
+    }
+    .text-h4 {
+        @apply font-poppins text-sm text-gray
+    }
+    .footer-link {
+        @apply font-poppins text-gray text-lg font-medium hover:text-dark
+    }
+
+    .shadow {
+        @apply drop-shadow-a drop-shadow-b drop-shadow-c drop-shadow-d drop-shadow-e drop-shadow-f}
+
+    .shadow-hover {
+        @apply drop-shadow-g
+    }
+    .stores-btn {
+        @apply bg-black flex justify-center items-center px-4 py-2 rounded-full gap-1 hover:shadow-hover
+    }
+    .sm-btn {
+        @apply shadow h-10 w-10 rounded-full flex items-center justify-center hover:shadow-hover
+    }
+    .inst-bg {
+        background: conic-gradient(
+            #B8D2F1 0deg, 
+    #F289AA 17%, 
+    #C68BF0 29%, 
+    #D164DA 43%, 
+    #C963E8 61%,
+    #BFC2E8 72%,
+    #FFC999 80%,
+    #D0D8C9 88%,
+    #BAD0F1 93%,
+    #CED8CB 100%
+
+);
+    }
+     /* ?? */
+
+
+    .text-subtitle {
+        @apply font-poppins font-semibold text-lg text-gray capitalize
+    }
+    .text-h2 {
+        @apply font-volkhov font-bold text-[50px] text-blue capitalize
+    }
+
+
+	  
+
+
+
+
+}
+
